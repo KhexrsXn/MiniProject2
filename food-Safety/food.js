@@ -6,7 +6,7 @@ const closeWindows= document.querySelectorAll("#CloseWindow")
 buzzer.forEach(button => button.addEventListener 
   ("click", () => {
 
-    let audio = new Audio("/pictures/buzz.wav");
+    let audio = new Audio("pictures/buzz.wav");
     audio.play()
 
 } ));
@@ -14,7 +14,7 @@ buzzer.forEach(button => button.addEventListener
 bells.forEach(button => button.addEventListener 
   ("click", () => {
 
-    let audio = new Audio("/pictures/bell.wav");
+    let audio = new Audio("pictures/bell.wav");
     audio.play()
 
 } ));
