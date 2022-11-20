@@ -1,0 +1,43 @@
+.title-label{
+  margin: 50px auto;
+
+}
+.title-label h1{
+  text-align: center;
+  font-weight: bold;
+  color: #1c1c1c;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.title-label h1::after{
+  content: '';
+  background: #1c1c1c;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.picture{
+  width: 300px;
+  margin: 1rem;
+  border-radius: 2rem ;
+}
+
+.picture:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#pics3{
+  background-color: #3E6D9C;
+}
+
+#pics3 button{
+  background-color: #FD841F;
+  color:rgb(248, 248, 248)
+}
+#questionText{
+  background-color: #3E6D9C;
+  color:whitesmoke
+}
