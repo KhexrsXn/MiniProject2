@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// ---
+    const numbers = [3, 5, 8, 9, 2]
+
+    const multiplyByTwo = (number) =>  number * 2;
+        let multipliedNumbers = numbers.map(multiplyByTwo);
+        console.log(multipliedNumbers)
+
+    
+// --
+    const sum = (num1, num2) => num1 + num2;
+    console.log("The answer to everythins is: ", sum(42, 0));
+
+    
+// ---
+    let stringLength = str => console.log(`the length of "$(str)" is:`, str.length);
+
+    let longest = "Taumatawhakatangihangakoauauotamateaturipukakapiki-maungahoronukupokaiwhenuakitnatahu"
+
+    stringLength(longest)
+
+// --- 
+    const stringLLength = (str) => {
+        let length = str.length
+        console.log(`the length of "$(str)" is`, length)
+    }
+
+    stringLLength("willynilly");
+
+//  ---
+    // let oneTwoThreeRotate = () => { 
+    //     Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(tag => tag.style){
+    //        ['transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';
+    //     }
+    // }
+    
+    // oneTwoThreeRotate()
+
+//----
+    const log = (x = 10) => {
+        console.log(x)
+    }
+    log(2)
+
+//---destructuring
+    const person = {
+        name: 'Rose',
+        age: '25',
+        address: {
+            City: 'Rizal',
+            Street: 'Highway',
+            Number : '30'
+        },
+        nationality: 'Fil-am'
+        
+    };
+    const print1 = ({
+        name, age, address, nationality
+    }) => {
+    console.log(name,age,address, nationality)
+    }
+
+    print1(person)
+
+// rest parameter
+    function restParameter(...z) {
+        console.log(z)
+    }
+    restParameter('apple', 'Banana', 'kiwi', 'duhat', 'lansones', 'strawberry',);
+
+// rest properies
+    const {street, ... address} = {
+        street: 'maligaya st',
+        postalCode: ' 1011',
+        city: 'cavite'
+    };
+
+// spread operator - copy all obj/arr into another.
+    const oneToFive = [1, 2, 3, 4, 5]
+    const oneToTen = [...oneToFive, 6, 7, 9, 10]
+    console.log(oneToTen)
+
+//spread elements
+    let fruits = ['Apple', 'Orange', 'Banana',]
+
+    let newFruits = ['Cherry',...fruits]
+    console.log(newFruits)
+
+    // ----
+    var getFruits = (f1,f2,f3) => {
+        console.log(`Fruits: ${f1}, ${f2}, ${f3}`)
+    }
+    getFruits(...fruits)
+    // ---
+    var obj1 = [1, 3, 4, 5]
+    var obj2 = [12, 33, 24, 15]
+
+    const numero = {...obj1, ...obj2}
+    console.log(numero)
+    
+
+
+</script>
+</body>
+</html>
