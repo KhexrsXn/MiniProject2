@@ -28,15 +28,6 @@
   transform: scale(1.1);
   cursor: pointer;
 }
-
-/* #pics3 button{
-  background-color: #FD841F;
-  color:rgb(248, 248, 248)
-}
-#pics2 button{
-  background-color: #FD841F;
-  color:rgb(248, 248, 248)
-} */
 #questionText{
   background-color: #3E6D9C;
   color:whitesmoke;
@@ -53,4 +44,8 @@
 #row-main button{
   background-color: #FD841F;
   color:rgb(248, 248, 248)
+}
+#row-main button:hover{
+  background-color: #f7500e;
+  transform: scale(1.1);
 }
