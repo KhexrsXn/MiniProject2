@@ -57,20 +57,46 @@
 <body>
 
     <!-- navbar -->
-    <div class="container-fluid">
-        <div class="nav d-flex justify-content-evenly p-3">
-            <img src="none" alt="">
-            <a href="#">Category</a>
-            <a href="#">Support</a>
-            <input class="rounded-pill w-25" type="text" id="searchbar">
+    <input type="checkbox" id="toggle">
+    
+    <div class="container-fluid" id="nav">
+      <img src="/Picture/logoDevkids.png" alt="">
 
-            <a href="#"><i class="fa-sharp fa-solid fa-bell"></i></a>
-            <a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            <a href="#"><i class="fas fa-user-tie"></i></a>
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
 
-        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">Category</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Support</a>
+            </li>
+
+            <li class="nav-item">
+                <i class="fas fa-search"></i>
+                <input class="rounded-pill h-50" type="text" id="searchbar" placeholder="Search here">
+            </li>
+
+
+            <li class="nav-item">   
+                <a href="#"><i class="fa-sharp fa-solid fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </li >
+            <li class="nav-item">
+                <a href="#"><i class="fas fa-user-tie"></i></a>
+            </li>
+        </ul>
     </div>
+    <!-- navbar end  -->
     
     <!-- hero  -->
     <div class="hero-image">
