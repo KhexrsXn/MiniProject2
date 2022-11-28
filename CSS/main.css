@@ -177,10 +177,13 @@ body{
     width: 100%;
     top: 75px;
     left: 0;
-    transform: translateY(1000%);
-    z-index: 3;
-    transition: .6s;
+    transform: translateY(-150%);
+    z-index: 2;
+    transition: .3s;
     opacity: .9;
+  }
+  #nav {
+    z-index: 999;
   }
   #nav .nav-list nav-item {
     padding-left: 35px;
@@ -216,7 +219,7 @@ body{
   display: none;
 }
 #toggle:checked ~ #nav .nav-list {
-  transform: translateY(2%);
+  transform: translateY(3%);
 }
 #toggle:checked ~ #nav .navbar-toggler {
   margin-top: 35px;
