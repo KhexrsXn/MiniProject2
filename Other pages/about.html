@@ -7,12 +7,27 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<!-- font-navbar -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-    />
+<!-- CSS only bootsrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="/CSS/main.css">
+<!-- font-navbar -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- font font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- main css -->
+<link rel="stylesheet" href="/CSS/main.css">
+<link rel="stylesheet" href="/CSS/partners.css">
+<link rel="stylesheet" href="/CSS/footer.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
   <title>ABOUT</title>
 
@@ -23,10 +38,10 @@
     margin: 0;
   }
 
-  .main-about{
+  /* .main-about{
     background-image: url("/Picture/kids-ok.png");
     background-repeat: no-repeat;
-  }
+  } */
   .main-about img {
     margin: 0;
   }
@@ -35,6 +50,8 @@
     color: white;
     background-color: rgba(32, 30, 30, 0.4);
     padding: .5rem;
+
+
   }
   .about-text h1{
     font-weight: 900;
@@ -46,13 +63,9 @@
   .chat-bot:hover{
     transform: scale(1.1);
   }
-
-  @media only screen and (max-width: 430px) {
-    .about-text{
-      margin-top: 43%;
-      width: 70%;
-    }
-    }
+  .about-img-1{
+    position: relative;
+  }
 
 
     
@@ -102,34 +115,139 @@
 <!-- navbar end  -->
 
 <!-- ABOUT -->
-  <div class="main-about d-flex">
-      <div class="about-text m-auto col-5">
-        <h1>ABOUT US!</h1>
-        <h2>Releasing children from Loneliness in Devkids Academy</h2>
-        <h6>We commit this website to all the kids want to develop their own skills</h6>
-      </div>
-      <div class="col-7">
-        <img class="" src="/Picture/About-3.jpg" alt="">
-      </div>
-  </div>
+<div class="d-flex">
+    <!-- <div class="">
+        <img class="col-lg-5 m-auto w-100" src="/Picture/kids-ok.png" alt="">
+    </div> -->
+    <div class="">
+    <img class="col-lg-5 m-auto w-100" src="/Picture/about us-6.png" alt="">
+.    </div>
+</div>
 
-  <div class="d-flex m-5 gap-5">
+  <div class="d-flex gap-5">
     <div class="chat-us m-auto">
-      <h1 class="chat-us text-center">Chat us!</h1>
+      <h1 class="chat-us text-center">Chat with DevKids!</h1>
       <div class="chat-bot">
         <a href="./Hero.html" target="_blank">
-          <img src="/Picture/robot-no-bg.png" alt="">
+          <img class="col-lg-5 m-auto w-100" src="/Picture/robot-no-bg.png" alt="">
         </a>
       </div>
     </div>
-    <div class="m-auto mt-5"><img src="/Picture/Q  and A.png" alt="">
+      <div class="m-auto">
+      <img class="col-lg-5 m-auto w-100 mt-5" src="/Picture/Q  and A.png" alt="">
 .    </div>
   </div>
 
   <!-- END ABOUT -->
 
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!--PARTNERS -->
+<div class="container-fluid background">
+  <h1 class="font-weight-bold">Partners</h1>
+  <section class="customer-logos slider">
+      <div class="slide"><img src="/images/partners/blippi.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/dbillions.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/cocomelon.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/minipang.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/pawpatrol.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/pinkfong.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/pororo.png" alt="logo"></div>
+      <div class="slide"><img src="/images/partners/jojo.png" alt="logo"></div>
+  </section>
+</div>
+<!--END PARTNERS -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-start">
+      <div class="foot-container">
+          <div class="foot-title">
+              <img src="/images/partners/logoDevkids.png" alt="logo">
+          </div>
+          <div class="foot-dtl-p">
+              <!-- <p><a href="./shop.html">VIEW ALL</a></p>
+              <p>SPECIAL OFFERS</p> -->
+          </div>
+      </div>
+      <div class="foot-container support">
+          <div class="foot-title">
+              <p>Support</p>
+          </div>
+          <div class="foot-dtl-p">
+              <p><a href="">About us</a></p>
+              <p><a href="">FAQs</a></p>
+              <p><a href="">Careers</a></p>
+              <p><a href="">Terms & Condition</a></p>
+          </div>
+      </div>
+      <div class="foot-container socmed">
+          <div class="foot-title">
+              <p>Follow</p>
+          </div>
+          <div class="foot-dtl-soc">
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-youtube"></i>
+              <i class="fa fa-instagram"></i>
+          </div>
+          <div class="foot-title">
+              <p>Location</p>
+          </div>
+          <div class="foot-dtl-p">
+              <p><a href="">500 S Buena Vista St Burbank, CA, 91521-0001 United States</a></p>
+          </div>
+      </div>
+      <div class="foot-container download">
+          <div class="foot-title">
+              <p>Download Now</p>
+          </div>
+          <div class="foot-dtl-dl">
+              <img src="/images/partners/app.jpg" alt="">
+              <img src="/images/partners/play.jpg" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="foot-end">
+      <div class="copyright">
+          <p>Copyright © 2022 DevKids Academy - All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+<script>
+
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover:false,
+      responsive: [{
+          breakpoint: 768,
+          setting: {
+              slidesToShow:3
+          }
+      }, {
+          breakpoint: 520,
+          setting: {
+              slidesToShow: 2
+          }
+      }]
+  });
+});
+
+</script>
+<!-- END FOOTER -->
+  
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
