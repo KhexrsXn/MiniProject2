@@ -177,7 +177,7 @@ body{
     width: 100%;
     top: 75px;
     left: 0;
-    transform: translateY(150%);
+    transform: translateY(1000%);
     z-index: 3;
     transition: .6s;
     opacity: .9;
