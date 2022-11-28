@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/typing.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="./img/fruit.png" alt="bg"> -->
+        <div class="head">
+            <div class="timer">
+                <p class="lable">Timer: </p>
+                <p id="timer">20</p>
+            </div>
+            <div class="score">
+                <p class="lable">Score: </p>
+                <p id="scoreInc">0</p>
+            </div>
+        </div>
+        <div class="words">
+            <p id="randomWords">Typing Test</p>
+        </div>
+        <div class="foot">
+            <div class="typing">
+                <input type="text" id="typeAnswer" placeholder="type answer here..." autocomplete="off" onkeyup="a()">
+            </div>
+        </div>
+        <div class="button">
+            <button id="play">Play</button>
+        </div>
+    </div>
+
+    <script src="./js/typing.js"></script>
+</body>
+</html>
