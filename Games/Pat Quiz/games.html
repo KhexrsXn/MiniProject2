@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | DevKids Academy</title>
+
+    <link rel="shortcut icon" href="/Group-5-Mini-Project-2/images/logoDevKids.png" type="image/x-icon">
+
+    <!-- font-navbar -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/CSS/courses.css">
+    <link rel="stylesheet" href="/Group-5-Mini-Project-2/CSS/footer.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <input type="checkbox" id="toggle">
+
+    <div class="container-fluid" id="nav">
+        <img src="/Group-5-Mini-Project-2/images/logoDevKids.png" alt="">
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">Category</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Support</a>
+            </li>
+
+            <li class="nav-item">
+                <i class="fas fa-search"></i>
+                <input class="rounded-pill h-50" type="text" id="searchbar" placeholder="Search here">
+            </li>
+
+
+            <li class="nav-item">
+                <a href="#"><i class="fa-sharp fa-solid fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="fas fa-user-tie"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar end  -->
+
+    <!-- main page start -->
+    <main>
+        <div class="container">
+            <div class="custom-shape-divider-top-1668877980">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h1 class="logo animate__animated animate__swing animate__delay-1s">Mini Quiz</h1>
+            <div class="row">
+                <div class="card-panel-result hide" id="result">
+                    <h2 class="center">You have scored <span class="marks">0%</span> of your test.</h2>
+                </div>
+                <div class="card-panel">
+                    <form class="questions-form">
+
+                        <!-- question 1 and choices -->
+                        <div class="question">
+                            <p>What is the capital of the Philippines?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn1" value="A"> <span>Makati</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn1" value="B"> <span>Manila</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn1" value="C"> <span>Baguio</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 2 and choices -->
+                        <div class="question">
+                            <p>How many weeks are there in a year?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn2" value="A"> <span>48 weeks</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn2" value="B"> <span>51 weeks</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn2" value="C"> <span>52 weeks</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 3 and choices -->
+                        <div class="question">
+                            <p>There are ___ months in a year?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn3" value="A"> <span>10</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn3" value="B"> <span>8</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn3" value="C"> <span>12</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 4 and choices -->
+                        <div class="question">
+                            <p>Name the shape with seven sides?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn4" value="A"> <span>Decagon</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn4" value="B"> <span>Heptagon</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn4" value="C"> <span>Hexagon</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 5 and choices -->
+                        <div class="question">
+                            <p>The color of cow's milk is ____?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn5" value="A"> <span>Black</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn5" value="B"> <span>Pink</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn5" value="C"> <span>White</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 6 and choices -->
+                        <div class="question">
+                            <p>Which is the first letter of the English alphabet?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn6" value="A"> <span>Z</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn6" value="B"> <span>A</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn6" value="C"> <span>D</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 7 and choices -->
+                        <div class="question">
+                            <p>Which part of your body do you use to see?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn7" value="A"> <span>Nose</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn7" value="B"> <span>Tongue</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn7" value="C"> <span>Eyes</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 8 and choices -->
+                        <div class="question">
+                            <p>What is the color of rainbow?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn8" value="A"> <span>Pink, blue, green, white, red, yellow, black</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn8" value="B"> <span>Red, orange, yellow, green, blue, indigo, violet</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn8" value="C"> <span>Blue, yellow, grey, violet, orange, white, brown</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 9 and choices -->
+                        <div class="question">
+                            <p>Name the vowels in English.</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn9" value="A"> <span>A,B,C,D,E</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn9" value="B"> <span>A,E,I,O,U</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn9" value="C"> <span>C,E,F,I,K</span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <!-- question 10 and choices -->
+                        <div class="question">
+                            <p>Orange is a source of which vitamin?</p>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn10" value="A"> <span>Vitamin C</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn10" value="B"> <span>Vitamin A</span>
+                                    </label>
+                            </div>
+                            <div class="answer">
+                                <label for="#">
+                                        <input type="radio" name="qn10" value="C"> <span>Vitamin B</span>
+                                    </label>
+                            </div>
+                        </div>
+                        <button class="btn">Submit Answer</button>
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end of main page -->
+
+    <audio src="/Group-5-Mini-Project-2/Games Page/assets/Anime Wow! - QuickSounds.com.mp3" id="audio1"></audio>
+
+    <!-- footer start -->
+    <footer>
+        <div class="foot-start">
+            <div class="foot-container">
+                <div class="foot-title">
+                    <img src="/Group-5-Mini-Project-2/images/logoDevKids.png" alt="logo">
+                </div>
+                <div class="foot-dtl-p">
+                    <!-- <p><a href="./shop.html">VIEW ALL</a></p>
+                    <p>SPECIAL OFFERS</p> -->
+                </div>
+            </div>
+            <div class="foot-container support">
+                <div class="foot-title">
+                    <p>Support</p>
+                </div>
+                <div class="foot-dtl-p">
+                    <p><a href="">About us</a></p>
+                    <p><a href="">FAQs</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Terms & Condition</a></p>
+                </div>
+            </div>
+            <div class="foot-container socmed">
+                <div class="foot-title">
+                    <p>Follow</p>
+                </div>
+                <div class="foot-dtl-soc">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <div class="foot-title">
+                    <p>Location</p>
+                </div>
+                <div class="foot-dtl-p">
+                    <p><a href="">500 S Buena Vista St Burbank, CA, 91521-0001 United States</a></p>
+                </div>
+            </div>
+            <div class="foot-container download">
+                <div class="foot-title">
+                    <p>Download Now</p>
+                </div>
+                <div class="foot-dtl-dl">
+                    <img src="/Group-5-Mini-Project-2/images/partners/app.jpg" alt="">
+                    <img src="/Group-5-Mini-Project-2/images/partners/play.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="foot-end">
+            <div class="copyright">
+                <p>Copyright © 2022 DevKids Academy - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- JS -->
+    <script src="/Group-5-Mini-Project-2/Games Page/app.js"></script>
+</body>
+
+</html>
