@@ -159,6 +159,7 @@ body{
   height: 2.5rem;
   text-align: center;
   position: relative;
+  background-color: #f3f3f3;
 
 }
 .fa-search{
@@ -166,7 +167,8 @@ body{
   z-index: 3;
   color: rgb(76, 76, 76);
   margin-top: 25px;
-  padding: 10px;
+  padding: 12px;
+
   font-size: x-large;
 }
 .nav-list a::after {
@@ -179,7 +181,7 @@ body{
   left: 0;
   right: 0;
   transform: scale(0, 1);
-  transform-origin: center;
+  transform-origin: left;
   transition: ease-in-out .3s;
 }
 .nav-list a:hover::after {
@@ -195,12 +197,14 @@ body{
   left: 0;
   right: 0;
   transform: scale(0, 1);
-  transform-origin: right;
+  transform-origin: left;
   transition: ease-in-out .3s;
 }
 #icons:hover::after {
   transform: scale(1,1);
 }
+
+
 
 
 @media  (max-width: 1200px) {
@@ -254,6 +258,7 @@ body{
     color: white;
   }
 }
+
 #nav .navbar-toggler {
   display: none;
   height: min-content;

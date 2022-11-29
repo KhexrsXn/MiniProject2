@@ -71,7 +71,7 @@
 <body>
 
     <!-- navbar -->
-    <input class="navham" type="checkbox" id="toggle">
+    <input type="checkbox" id="toggle">
     
     <div class="container-fluid" id="nav">
             <a id="web-logo" href="#"><img src="./Picture/logoDevkids.png" alt=""></a>
@@ -82,7 +82,7 @@
             <span class="bar"></span>
         </label>
 
-        <ul class="nav-list">
+        <ul class="nav-list" >
             <li class="nav-item">
                 <a href="/Other pages/category.html">Category</a>
             </li>
@@ -105,13 +105,14 @@
             <li class="nav-item">
                 <label href="#" for="toggle" id="icons"><i class="fa-solid fa-cart-plus"></i></label>
             </li >
-            <li class="nav-item">
-                <a href="#"><i class="fas fa-user"></i></a>
+            <li class="nav-item" for="toggle">
+                <label href="#" for="toggle" id="icons"onclick="accountPop()"><i class="fas fa-user"></i></label>
             </li>
         </ul>
     </div>
 
     <!-- navbar end  -->
+    <!-- account  -->
     <section class="Account forms" id="Account">
         <!-- LogIn -->
         <div class="form login">
@@ -310,7 +311,7 @@
     <!-- testimonials  -->
 <div class="container testimonial">
     <h4>Testimonials</h4>
-    <div class="row gap-5 flex-row flex-nowrap p-0 pb-4"  id="testimonial">
+    <div class="row gap-1 flex-row flex-nowrap p-0 pb-4"  id="testimonial">
             <div class="col-sm-12 col-md-4">
               <div class="card-bg card">
                 <img
