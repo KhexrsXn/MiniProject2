@@ -107,6 +107,9 @@ body{
   align-items: center;
   background-color: #00005C;
   line-height: 6rem;
+  position: sticky;
+  top:0;
+  z-index: 50;
 }
 #nav .navlogo {
   color: aliceblue;
