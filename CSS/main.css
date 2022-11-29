@@ -242,7 +242,7 @@ body{
   transition: .6s;
 }
 #toggle {
-  display: block;
+  display: none;
 }
 #toggle:checked ~ #nav .nav-list {
   transform: translateY(0);
