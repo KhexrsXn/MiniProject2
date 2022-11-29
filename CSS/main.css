@@ -241,7 +241,7 @@ body{
   display: none;
 }
 #toggle:checked ~ #nav .nav-list {
-  transform: translateY(3%);
+  transform: translateY(0);
 }
 #toggle:checked ~ #nav .navbar-toggler {
   margin-top: 35px;
