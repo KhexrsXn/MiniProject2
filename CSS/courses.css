@@ -115,7 +115,7 @@ h2 {
 
 .typo-space-typing::after {
     content: "";
-    width: 220px;
+    width: 260px;
     display: block;
     position: absolute;
     border-bottom: 5px solid #eb5424;
@@ -124,7 +124,7 @@ h2 {
 
 .typo-space-english::after {
     content: "";
-    width: 200px;
+    width: 260px;
     display: block;
     position: absolute;
     border-bottom: 5px solid #eb5424;
@@ -133,7 +133,7 @@ h2 {
 
 .typo-space-science::after {
     content: "";
-    width: 200px;
+    width: 260px;
     display: block;
     position: absolute;
     border-bottom: 5px solid #eb5424;
