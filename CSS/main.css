@@ -88,6 +88,7 @@ body{
 
 
 /* NAV BAR  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -96,15 +97,16 @@ body{
   outline: 0;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 #nav {
   display: flex;
   justify-content: space-between ;
-  padding: 0;
+  padding: 1rem;
   height: 6rem;
-  line-height: 6rem;
+  align-items: center;
   background-color: #00005C;
+  line-height: 6rem;
 }
 #nav .navlogo {
   color: aliceblue;
@@ -117,6 +119,7 @@ body{
   padding: 0;
   width: 100%;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 #nav .nav-list .nav-item {
   cursor: pointer;
@@ -129,15 +132,17 @@ body{
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
+  position: relative;
 }
 #nav .nav-list a:hover{
   color: #FFD700;
 }
 #searchbar {
   width: 30rem;
-  height: 4rem;
+  height: 2.5rem;
   text-align: center;
   position: relative;
+
 }
 .fa-search{
   position: absolute;
@@ -147,6 +152,22 @@ body{
   padding: 10px;
   font-size: x-large;
 }
+#nav a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #FFD700;
+  position: absolute;
+  top: 1.7em;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: ease-in-out .3s;
+}
+#nav a:hover::after {
+  transform: scale(1,1);
+}
 
 
 
@@ -155,7 +176,7 @@ body{
     padding: 0 2rem;
   }
   #nav .nav-list .nav-item {
-    padding: 0 10px;
+    padding: 0 5px;
   }
   #searchbar {
     width: 20rem;
@@ -175,6 +196,7 @@ body{
     position: absolute;
     background-color: #00005C;
     width: 100%;
+    height: 100%;
     top: 75px;
     left: 0;
     transform: translateY(-150%);
@@ -247,7 +269,7 @@ body{
 .card-bg{
   background-color: #00005C;
   border: 3px solid rgb(0, 0, 0);
-  box-shadow: 10px 10px 20px 2px;
+  box-shadow: 10px 10px 20px 2px
 }
 .card-body{
   background-color: white;
