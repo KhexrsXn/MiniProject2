@@ -48,7 +48,7 @@ footer{
     text-align: left;
 }
 
-.foot-title > img{
+.foot-title img{
     width: 200px;
     height: 180px;
     text-align: left;
@@ -168,7 +168,7 @@ footer{
         text-align: left;
     }
     
-    .foot-title > img{
+    .foot-title img{
         width: 150px;
         height: auto;
         text-align: left;
@@ -193,7 +193,7 @@ footer{
         text-align: left;
     }
     
-    .foot-title > img{
+    .foot-title img{
         width: 100px;
         height: auto;
         text-align: left;
@@ -223,7 +223,7 @@ footer{
         text-align: left;
     }
     
-    .foot-title > img{
+    .foot-title img{
         width: 200px;
         height: auto;
         text-align: left;
@@ -258,7 +258,7 @@ footer{
         text-align: center;
     }
     
-    .foot-title > img{
+    .foot-title img{
         width: 100px;
         height: auto;
         text-align: center;
@@ -272,7 +272,7 @@ footer{
         display: flexbox;
         text-align: center;
     }
-    .foot-dtl-dl > img{
+    .foot-dtl-dl img{
         width: 130px;
         border-radius: 20px;
         margin-bottom: 10px;
