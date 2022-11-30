@@ -89,9 +89,19 @@ function pass_Verify(){
 const toTop = document.querySelector(".chat-bot");
 
 window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 500){
+    if (window.pageYOffset > 1500){
         toTop.classList.add("active");
     } else {
         toTop.classList.remove("active");
+    }
+});
+
+const toTop2 = document.querySelector(".chat-bot-2");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 300){
+        toTop2.classList.add("active");
+    } else {
+        toTop2.classList.remove("active");
     }
 });

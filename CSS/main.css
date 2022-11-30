@@ -545,11 +545,11 @@ input{
   .chat-bot{
     position: fixed;
     z-index: 100;
-    top: 80%;
-    right: 0;
+    top: 78%;
+    right: 0%;
     width: 90px;
     opacity: 0;
-    transition: all .4s;
+    transition: all .5s;
   }
 
   .chat-bot.active{
@@ -558,6 +558,26 @@ input{
   }
 
   .chat-bot:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
+  .chat-bot-2{
+    position: fixed;
+    z-index: 100;
+    top: 65%;
+    right: 0;
+    width: 90px;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  .chat-bot-2.active{
+    opacity: 1;
+
+  }
+
+  .chat-bot-2:hover{
     transform: scale(1.2);
     cursor: pointer;
     
