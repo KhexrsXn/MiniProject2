@@ -99,10 +99,19 @@ window.addEventListener("scroll", ()=>{
 const toTop2 = document.querySelector(".chat-bot-2");
 
 window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 300){
+    if (window.pageYOffset > 700){
         toTop2.classList.add("active");
     } else {
         toTop2.classList.remove("active");
+    }
+});
+const toTop3 = document.querySelector(".chat-bot-3");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 300){
+        toTop3.classList.add("active");
+    } else {
+        toTop3.classList.remove("active");
     }
 });
 //END CHAT BOT
