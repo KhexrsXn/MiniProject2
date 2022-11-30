@@ -83,3 +83,15 @@ function pass_Verify(){
         return true;
     } 
 }
+
+//CHAT BOT//
+
+const toTop = document.querySelector(".chat-bot");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 500){
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+});

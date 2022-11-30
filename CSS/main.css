@@ -539,4 +539,30 @@ input{
   }
 }
 
+/* LOGIN END */
+
+/* CHATBOT */
+  .chat-bot{
+    position: fixed;
+    z-index: 100;
+    top: 80%;
+    right: 0;
+    width: 90px;
+    opacity: 0;
+    transition: all .4s;
+  }
+
+  .chat-bot.active{
+    opacity: 1;
+
+  }
+
+  .chat-bot:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
+/* CHATBOT END */
+
+
 
