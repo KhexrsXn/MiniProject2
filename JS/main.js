@@ -83,9 +83,9 @@ function pass_Verify(){
         return true;
     } 
 }
+//END LOGIN//
 
 //CHAT BOT//
-
 const toTop = document.querySelector(".chat-bot");
 
 window.addEventListener("scroll", ()=>{
@@ -105,3 +105,46 @@ window.addEventListener("scroll", ()=>{
         toTop2.classList.remove("active");
     }
 });
+//END CHAT BOT
+
+
+//PARTNERS//
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover:false,
+        responsive: [{
+            breakpoint: 768,
+            setting: {
+                slidesToShow:3
+            }
+        }, {
+            breakpoint: 520,
+            setting: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+
+
+
+$(document).ready(function(){
+    $('.customer-logos-testi').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        grabCursor:true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: false,
+        pauseOnHover:false,
+        
+    });
+});
+//END PARTNERS
