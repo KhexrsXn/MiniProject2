@@ -16,15 +16,21 @@ h2{
 }
 .slick-slide{
     margin: 0 20px;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
 
 }
 .slick-slide img{
     width: 100%;
+    display: block;
 }
 .slick-slider{
     position: relative;
     display: block;
     box-sizing: border-box;
+    
 }
 .slick-list{
     position: relative;
@@ -32,6 +38,7 @@ h2{
     overflow: hidden;
     margin: 0;
     padding: 0;
+    
 }
 .slick-track{
     position: relative;
@@ -39,15 +46,7 @@ h2{
     left: 0;
     display: block
 }
-.slick-slide{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-.slick-slide img{
-    display: block;
-}
+
 .slick-initialized .slick-slide{
     display: block;
 }
