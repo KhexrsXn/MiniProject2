@@ -3,10 +3,11 @@ body{
 }
 
 /* HERO HERO START */
+
 .hero-image {
   width: 100%;
   height: 100vh;
-  background-image: url("/Picture/hero-Kids-red.jpg");
+  background-image: url("../Picture/hero-Kids-red.jpg");
   display: flex;
   background-position: top;
   background-repeat: no-repeat;
@@ -57,7 +58,7 @@ body{
 
 @media only screen and (max-width: 800px) {
       .hero-image {
-        background-image: url("/Picture/hero-Kids-red.jpg");
+        background-image: url("../Picture/hero-Kids-red.jpg");
         background-size: contain;
         height: 50vh;
 
@@ -296,6 +297,10 @@ body{
 /* END NAVBAR */
 
 /* TESTIMONIAL */
+.main-testi{
+  height: 85vh;
+  margin: auto;
+}
 .card-img-top{ 
   border-radius: 100%;
   width: 65%;
@@ -303,17 +308,29 @@ body{
   padding: 1rem;
   
 }
+
 .card-bg{
   background-color: #00005C;
   border: 3px solid rgb(0, 0, 0);
-  box-shadow: 10px 10px 20px 2px
+  box-shadow: 10px 10px 20px 2px;
+  height: 420px;
+
 }
 .card-body{
   background-color: white;
 }
 .card-title{
-  font-weight: 600;
+  font-weight: 700;
 }
+@media(max-width: 500px){
+  .card-bg{
+    width: 100%;
+
+  }
+  
+
+}
+
 /* END TESTIMONIAL */
 
 /* --- login ---- */
