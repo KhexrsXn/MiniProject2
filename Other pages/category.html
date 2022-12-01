@@ -174,13 +174,14 @@
         </div>
     </div> -->
 
-    <!-- end of typing games -->
+        <!-- end of typing games -->
 
-<!-- english quiz start -->
-         <div class="title">
+        <!-- english quiz start -->
+    <div class="hideMe">
+        <div class="title ">
             <h2 class="typo-space-english">English Quiz</h2>
         </div>
-        <div class="container-game">
+        <div class="container-game ">
             <div class="card-game">
                 <div class="card-details">
                     <img src="/Picture/games/english-quiz-1.webp" height="175" alt="English Quiz">
@@ -232,7 +233,6 @@
         </div>
         <div class="container-game">
 
-
             <div class="card-game">
                 <div class="card-details">
                     <img src="/Picture/games/Food and safety 3.jpg" alt="Science Quiz" height="175">
@@ -278,7 +278,7 @@
 
 
 
-    <!-- end of science quiz -->
+        <!-- end of science quiz -->
 
     <div class="container-fluid background">
         <div class="title">
@@ -523,20 +523,21 @@
         const aboutSec = document.querySelector('.container-fluid.background');
         const partners = document.querySelector('.slide-container.swiper'); 
         const imgSec = document.querySelector('.img-container'); 
+        const hideMe = document.querySelector('.hideMe');
 
     
         function accountPop(){
             acnt.classList.add("open-acnt");
-            aboutSec.classList.add('hide');
-            partners.classList.add('hide');
-            hideMe.classList.add('hide');
+            aboutSec.classList.add("hide");
+            partners.classList.add("hide");
+            hideMe.classList.add("hide");
         }
 
         function Accointclose() {
             acnt.classList.remove("open-acnt");
-            aboutSec.classList.remove('hide');
-            partners.classList.remove('hide');
-            hideMe.classList.remove('hide');
+            aboutSec.classList.remove("hide");
+            partners.classList.remove("hide");
+            hideMe.classList.remove("hide");
         }
     </script>
 </body>
