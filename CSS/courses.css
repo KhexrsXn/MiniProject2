@@ -188,12 +188,28 @@ body {
         font-size: 1.1rem;
     }
     .typo-space-typing::after {
-        width: 195px;
+        width: 80px;
+        margin-left: 20px;
+        padding-top: 1rem;
     }
     .typo-space-english::after {
-        width: 190px;
+        width: 125px;
+        margin-left: 35px;
+        padding-top: 1rem;
     }
     .typo-space-science::after {
-        width: 190px;
+        width: 125px;
+        margin-left: 35px;
+        padding-top: 1rem;
+    }
+    .typo-space-testi::after {
+        width: 125px;
+        margin-left: 35px;
+        padding-top: 1rem;
+    }
+    .typo-space-partner::after {
+        width: 100px;
+        margin-left: 15px;
+        padding-top: 1rem;
     }
 }
