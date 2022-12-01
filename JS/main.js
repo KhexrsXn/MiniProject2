@@ -86,34 +86,34 @@ function pass_Verify(){
 //END LOGIN//
 
 //CHAT BOT//
-const toTop = document.querySelector(".chat-bot");
+const toTop = document.querySelector("#chat-bot");
 
 window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 1500){
+    if (window.pageYOffset > 700){
         toTop.classList.add("active");
     } else {
         toTop.classList.remove("active");
     }
 });
 
-const toTop2 = document.querySelector(".chat-bot-2");
+const toTop2 = document.querySelector("#chat-bot-2");
 
 window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 700){
+    if (window.pageYOffset > 1500){
         toTop2.classList.add("active");
     } else {
         toTop2.classList.remove("active");
     }
 });
-const toTop3 = document.querySelector(".chat-bot-3");
+// const toTop3 = document.querySelector(".chat-bot-3");
 
-window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 300){
-        toTop3.classList.add("active");
-    } else {
-        toTop3.classList.remove("active");
-    }
-});
+// window.addEventListener("scroll", ()=>{
+//     if (window.pageYOffset > 300){
+//         toTop3.classList.add("active");
+//     } else {
+//         toTop3.classList.remove("active");
+//     }
+// });
 //END CHAT BOT
 
 

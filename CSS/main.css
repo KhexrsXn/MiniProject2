@@ -542,24 +542,38 @@ input{
   .chat-bot{
     position: fixed;
     z-index: 100;
-    top: 80%;
-    right: 0;
-    width: 90px;
+    top: 74.2%;
+    right: 0%;
+    width: 45px;
+    height: 6.5%;
+    background-color: #00005C;
     opacity: 0;
     transition: all .4s;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
   }
 
   .chat-bot.active{
     opacity: 1;
 
   }
+  #chat-bot{
+    font-size: 26px;
+    
+  }
 
   .chat-bot:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
     cursor: pointer;
     
   }
-/* CHATBOT END */
+  #chat-bot-2{
+    top: 81%;
+  }
+
 
 
 
