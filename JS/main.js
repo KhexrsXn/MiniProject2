@@ -1,27 +1,26 @@
 // for Account popup
 const acnt = document.querySelector('.Account');
-const container = document.querySelector('.container');
-const heroSection = document.querySelector('.heroSection');
-const testimonial = document.querySelector('.testimonial');
-const partners = document.querySelector('.partners');
-const navham = document.querySelector('.navham');
+const heroSec = document.querySelector('.heroSec');
+const gameSec = document.querySelector('.gameSec');
+const testiSec = document.querySelector('.testiSec');
+const partSec = document.querySelector('.partSec');
 
 function accountPop(){
     acnt.classList.add("open-acnt");
-    container.classList.add("close-acnt");
-    heroSection.classList.add("close-acnt");
-    testimonial.classList.add("close-acnt");
-    partners.classList.add("close-acnt");
-    navham.classList.add("navham");
+    heroSec.classList.add("close-acnt");
+    gameSec.classList.add("close-acnt");
+    testiSec.classList.add("close-acnt");
+    partSec.classList.add('close-acnt');
+   
 }
-
 function Accointclose(){
     acnt.classList.remove("open-acnt");
-    container.classList.remove("close-acnt");
-    heroSection.classList.remove("close-acnt");
-    testimonial.classList.remove("close-acnt");
-    partners.classList.remove("close-acnt");
+    heroSec.classList.remove("close-acnt");
+    gameSec.classList.remove("close-acnt");
+    testiSec.classList.remove("close-acnt");
+    partSec.classList.remove('close-acnt');
 }
+
 
 const forms = document.querySelector(".forms"),
 passShowHide = document.querySelectorAll(".eye-icon"),

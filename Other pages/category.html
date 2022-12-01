@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/category.css">
     <link rel="stylesheet" href="../CSS/partners.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/footer-map.css">
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     rel="stylesheet"
@@ -109,6 +110,12 @@
             <div class="foot-container support">
                 <div class="foot-title">
                     <p>Support</p>
+                    <div class="popupContainer">
+                        <div class="popup" id="popup">
+                            <p id="btnClose">X</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.58392494594!2d-118.32733432499835!3d34.15698551219359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc3c0ca54f3%3A0xc78400656aa70e5!2s500%20S%20Buena%20Vista%20St%2C%20Burbank%2C%20CA%2091521%2C%20USA!5e0!3m2!1sen!2sph!4v1669865489452!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="foot-dtl-p">
                     <p><a href="">About us</a></p>
@@ -131,7 +138,7 @@
                     <p>Location</p>
                 </div>
                 <div class="foot-dtl-p">
-                    <p><a href="">500 S Buena Vista St Burbank, CA, 91521-0001 United States</a></p>
+                    <p id="mapLocation"><a href="">500 S Buena Vista St Burbank, CA, 91521-0001 United States</a></p>
                 </div>
             </div>
             <div class="foot-container download">
@@ -178,6 +185,8 @@
     });
 
     </script>
+
+    <script src="../JS/footer-map.js"></script>
 
 </body>
 </html>

@@ -297,6 +297,7 @@ body{
 .main-testi{
   height: 85vh;
   margin: auto;
+  font: 12px;
 }
 .card-img-top{ 
   border-radius: 100%;
@@ -329,7 +330,18 @@ body{
 }
 
 /* END TESTIMONIAL */
-
+.heroSec{
+  display: flex;
+}
+.gameSec{
+  display: block;
+}
+.testiSec{
+  display: block;
+}
+.partSec{
+  display: block;
+}
 /* --- login ---- */
 
 .Account{
@@ -341,6 +353,7 @@ body{
   background-color: #ffd700;
   column-gap: 30px;
   display: none;
+  transition: transform .5s;
 }
 .open-acnt{
   display: flex;
@@ -376,6 +389,7 @@ body{
   border-radius: 6px;
   background: #FFF;
   transition: all .5s;
+  margin-top: -100px;
 }
 .form.signup{
   opacity: 0;
