@@ -349,6 +349,14 @@ body{
 .aboutSec{
   display: block;
 }
+.slide-container.swiper.hide{
+  display: none;
+  pointer-events: none;
+}
+.container-fluid.background.hide{
+  display: none;
+  pointer-events: none;
+}
 /* --- login ---- */
 
 .Account{
