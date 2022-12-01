@@ -384,6 +384,31 @@
 
     <script src="../JS/main.js"></script>
     <script src="../JS/footer-map.js"></script>
+    <script src="../JS/swiper-bundle.min.js"></script>
+    <script src="../JS/developer.js"></script>
 
+    <script>
+        const acnt = document.querySelector('.Account');
+        const btnSec = document.querySelector('.button-container');
+        const aboutSec = document.querySelector('.container-fluid.background');
+        const partners = document.querySelector('.slide-container.swiper'); 
+        const imgSec = document.querySelector('.img-container'); 
+
+    
+        function accountPop(){
+            acnt.classList.add("open-acnt");
+            aboutSec.classList.add('hide');
+            partners.classList.add('hide');
+            btnSec.classList.add("hide");
+            imgSec.classList.add("hide");
+        }
+        function Accointclose(){
+            acnt.classList.remove("open-acnt");
+            aboutSec.classList.remove('hide');
+            partners.classList.remove('hide');
+            btnSec.classList.remove("hide");
+            imgSec.classList.remove("hide");
+        }
+    </script>
 </body>
 </html>
