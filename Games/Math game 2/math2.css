@@ -4,13 +4,18 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  .game2Math {
-    padding: 10px;
-    display: flex;
-   }
   body {
     background-color: #f4c531;
-  }
+  } */
+
+  /* .game-container{
+    width: 100%;
+    padding: 50px;
+    background-color: #cfcc88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
   .container {
     background-color: #ffffff;
     width: 90%;

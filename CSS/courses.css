@@ -163,7 +163,7 @@ body {
 
 .typo-space-partner::after {
     content: "";
-    width: 190px;
+    width: 175px;
     display: block;
     position: absolute;
     border-bottom: 5px solid #ba0000;

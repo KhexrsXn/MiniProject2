@@ -4,16 +4,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- logo -->
+        <link rel="shortcut icon" href="../Picture/images/partners/logoDevkids.png" type="image/x-icon">
 
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="stylesheet" href="/CSS/footer.css">
+        <link rel="stylesheet" href="/CSS/footer-map.css">
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
   <link rel="stylesheet" href="food.css">
 
   <title>Food Safety Learnings</title>
 </head>
 
 <body>
+
+  <!-- navbar -->
+  <input type="checkbox" id="toggle">
+    
+  <div class="container-fluid" id="nav">
+      <a id="web-logo" href="../index.html"><img src="/Picture/logoDevkids.png" alt=""></a>
+
+      <label class="navbar-toggler" for="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </label>
+
+      <ul class="nav-list" >
+          <li class="nav-item">
+              <a href="/Other pages/category.html">Category</a>
+          </li>
+          <li class="nav-item">
+              <a href="/Other pages/about.html">Support</a>
+          </li>
+
+          <li class="nav-item">
+              <i class="fas fa-search"></i>
+              <input class="rounded-pill" type="text" id="searchbar" placeholder="Search here">
+          </li>
+
+
+          <li class="nav-item">   
+              <label href="#" for="toggle" id="icons"><i class="fa-sharp fa-solid fa-bell"></i></label>
+          </li>
+          <li class="nav-item">
+              <label href="#" for="toggle" id="icons"><i class="fa-sharp fa-solid fa-heart"></i></label>
+          </li>
+          <li class="nav-item">
+              <label href="#" for="toggle" id="icons"><i class="fa-solid fa-cart-plus"></i></label>
+          </li >
+          <li class="nav-item" for="toggle">
+              <label href="#" for="toggle" id="icons"onclick="accountPop()"><i class="fas fa-user"></i></label>
+          </li>
+      </ul>
+  </div>
+  <!-- navbar end  -->
 
   <div class="title-label">
     <div class="container">
@@ -22,20 +83,20 @@
   </div>
 <div class="container bg-dark rounded-5 p-5 mb-5">
     <div class="row">
-      <div type="button" class="btn w-50 mb-2 m-auto" id="questionText">Before making foods, What should you do first?</div>
+      <div class="w-75 m-auto  rounded-4 mb-2" id="questionText">Before making foods, What should you do first?</div>
     </div>
 
     <div class="row text-center" id="row-main">
         <div class="col-lg-5  m-auto mb-2 rounded-5 p-2" id="pics3">
           <img class="picture" src="pictures/nowash.png" alt="">
           <div>
-            <button id="buzz" type="button" class="btn mb-2 rounded-3" >Proceed right away.</button>
+            <button id="buzz" class="mb-2 rounded-3 w-50" >Proceed right away.</button>
           </div>
         </div>
         <div class="div-2 col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics2">
           <img class="picture" src="pictures/wash.png" alt="">
           <div>
-            <button onclick="hide1()" id="bell" type="button" class="btn mb-2 rounded-3">Wash your hands before making foods.</button>
+            <button onclick="hide1()" id="bell" class="mb-2 rounded-3 w-75">Wash your hands before making foods.</button>
           </div>
         </div>
     </div>
@@ -44,20 +105,20 @@
 
 <div class="container bg-dark rounded-5 p-5 mb-5">
   <div class="row">
-    <div type="button" class="btn w-50 mb-2 m-auto p-2" id="questionText">What should you do with fruits and vegetables after buying them at the store?</div>
+    <div class="w-75 rounded-4 mb-2 m-auto p-2" id="questionText">What should you do with fruits and vegetables after buying them at the store?</div>
   </div>
 
   <div class="row text-center" id="row-main">
       <div class="col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics4">
         <img class="picture" src="pictures/wash-food-a.png" alt="">
         <div>
-          <button id="buzz" type="button" class="btn mb-2 rounded-3">Eat it right away</button>
+          <button id="buzz" class="w-50 mb-2 rounded-3">Eat it right away</button>
         </div>
       </div>
       <div class="div-2 col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics2">
         <img class="picture" src="pictures/wash-food-b.png" alt="">
         <div>
-          <button onclick="hide2()" id="bell" type="button" class="btn mb-2 rounded-3">Wash it before you eat.</button>
+          <button onclick="hide2()" id="bell"  class="w-50 mb-2 rounded-3">Wash it before you eat.</button>
         </div>
       </div>
       
@@ -66,19 +127,19 @@
 
 <div class="container bg-dark rounded-5 p-5 mb-5">
   <div class="row">
-    <div type="button" class="btn w-50 mb-2 m-auto" id="questionText">What is the right way to use cutting board?</div>
+    <div class="w-75 rounded-4 mb-2 m-auto p-2" id="questionText">What is the right way to use cutting board?</div>
   </div>
   <div class="row text-center" id="row-main">
       <div class="col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics5">
         <img class="picture" src="pictures/cut-b.png" alt="">
         <div>
-          <button id="buzz" type="button" class="btn mb-2 rounded-3">Chop it together.</button>
+          <button id="buzz"  class="w-50 mb-2 rounded-3">Chop it together.</button>
         </div>
       </div>
       <div class="div-2 col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics3">
         <img class="picture" src="pictures/cut-a.png" alt="">
         <div>
-          <button onclick="hide3()" id="bell" type="button" class="btn mb-2 rounded-3">Seperate the meat and vegetables.</button>
+          <button onclick="hide3()" id="bell"  class="w-75 mb-2 rounded-3">Seperate the meat and vegetables.</button>
         </div>
       </div>
       
@@ -87,19 +148,19 @@
 
 <div class="container bg-dark rounded-5 p-5 mb-5">
   <div class="row">
-    <div type="button" class="btn w-50 mb-2 m-auto p-2" id="questionText">How should you put your food in the shopping cart?</div>
+    <div class="w-75 rounded-4 mb-2 m-auto p-2" id="questionText">How should you put your food in the shopping cart?</div>
   </div>
   <div class="row text-center" id="row-main">
       <div class="col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics6">
         <img class="picture" src="pictures/Cart-a.png" alt="">
         <div>
-          <button id="buzz" type="button" class="btn mb-2 rounded-3">Just place it.</button>
+          <button id="buzz"  class="w-50 mb-2 rounded-3">Just place it.</button>
         </div>
       </div>
       <div class="div-2 col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics3">
         <img class="picture" src="pictures/cart-b.png" alt="">
         <div>
-          <button onclick="hide4()" id="bell" type="button" class="btn mb-2 rounded-3">Arranged it carefully.</button>
+          <button onclick="hide4()" id="bell" class="w-50 mb-2 rounded-3">Arranged it carefully.</button>
         </div>
       </div>
       
@@ -108,19 +169,19 @@
 
 <div class="container bg-dark rounded-5 p-5 mb-5">
   <div class="row">
-    <div type="button" class="btn w-50 mb-2 m-auto" id="questionText">What is the correctway to store food in the fridge?</div>
+    <div class="w-75 rounded-4 mb-2 m-auto p-2" id="questionText">What is the correctway to store food in the fridge?</div>
   </div>
   <div class="row text-center" id="row-main">
       <div class="col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics7">
         <img class="picture" src="pictures/ref-b.png" alt="">
         <div>
-          <button id="buzz" type="button" class="btn mb-2 rounded-3">Just place it.</button>
+          <button id="buzz"  class="w-50 mb-2 rounded-3">Just place it.</button>
         </div>
       </div>
       <div class="div-2 col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics3">
         <img class="picture" src="pictures/ref-a.png" alt="">
         <div>
-          <button onclick="hide5()" id="bell" type="button" class="btn mb-2 rounded-3">Must be arranged accordingly.</button>
+          <button onclick="hide5()" id="bell" class="w-75 mb-2 rounded-3">Must be arranged accordingly.</button>
         </div>
       </div>
       
@@ -129,7 +190,7 @@
 
 <div class="container bg-dark rounded-5 p-5 mb-5">
   <div class="row">
-    <div type="button" class="btn w-50 mb-2 m-auto" id="questionText">After cooking, What should you do with kitchen appliances?</div>
+    <div class="w-75 rounded-4 mb-2 m-auto p-2" id="questionText">After cooking, What should you do with kitchen appliances?</div>
   </div>
   <div class="row text-center" id="row-main">
       <div class="col-lg-5 m-auto mb-2 rounded-5 p-2" id="pics3">
@@ -148,9 +209,75 @@
   </div>
 </div>
 
+    <!-- Footer -->
+    <footer>
+      <div class="foot-start">
+          <div class="foot-container">
+              <div class="foot-title">
+                  <a href="/index.html"><img src="/Picture/images/partners/logoDevkids.png" alt="logo"></a>
+              </div>
+              <div class="foot-dtl-p">
+                  <!-- <p><a href="./shop.html">VIEW ALL</a></p>
+                  <p>SPECIAL OFFERS</p> -->
+              </div>
+          </div>
+          <div class="foot-container support">
+              <div class="foot-title">
+                  <p>Support</p>
+              </div>
+              <div class="foot-dtl-p">
+                  <p><a href="/Other pages/about.html">About us</a></p>
+                  <p><a href="">FAQs</a></p>
+                  <p><a href="">Careers</a></p>
+                  <p><a href="">Terms & Condition</a></p>
+              </div>
+              <div class="popupContainer">
+                  <div class="popup" id="popup">
+                      <p id="btnClose">X</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.58392494594!2d-118.32733432499835!3d34.15698551219359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc3c0ca54f3%3A0xc78400656aa70e5!2s500%20S%20Buena%20Vista%20St%2C%20Burbank%2C%20CA%2091521%2C%20USA!5e0!3m2!1sen!2sph!4v1669865489452!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+          </div>
+          <div class="foot-container socmed">
+              <div class="foot-title">
+                  <p>Follow</p>
+              </div>
+              <div class="foot-dtl-soc">
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-instagram"></i>
+              </div>
+              <div class="foot-title">
+                  <p>Location</p>
+              </div>
+              <div class="foot-dtl-p">
+                  <p id="mapLocation"><a href="">500 S Buena Vista St Burbank, CA, 91521-0001 United States</a></p>
+              </div>
+          </div>
+          <div class="foot-container download">
+              <div class="foot-title">
+                  <p>Download Now</p>
+              </div>
+              <div class="foot-dtl-dl">
+                  <img src="/Picture/images/partners/app.jpg" alt="">
+                  <img src="/Picture/images/partners/play.jpg" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="foot-end">
+          <div class="copyright">
+              <p>Copyright © 2022 DevKids Academy - All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+<script src="./JS/main.js"></script>
+<script src="./JS/footer-map.js"></script>
 <script src="food.js"></script>
 </body>
 </html>
