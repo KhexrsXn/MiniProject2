@@ -83,15 +83,77 @@ function pass_Verify(){
         return true;
     } 
 }
+//END LOGIN//
 
 //CHAT BOT//
-
 const toTop = document.querySelector(".chat-bot");
 
 window.addEventListener("scroll", ()=>{
-    if (window.pageYOffset > 500){
+    if (window.pageYOffset > 1500){
         toTop.classList.add("active");
     } else {
         toTop.classList.remove("active");
     }
 });
+
+const toTop2 = document.querySelector(".chat-bot-2");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 700){
+        toTop2.classList.add("active");
+    } else {
+        toTop2.classList.remove("active");
+    }
+});
+const toTop3 = document.querySelector(".chat-bot-3");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 300){
+        toTop3.classList.add("active");
+    } else {
+        toTop3.classList.remove("active");
+    }
+});
+//END CHAT BOT
+
+
+//PARTNERS//
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover:false,
+        responsive: [{
+            breakpoint: 768,
+            setting: {
+                slidesToShow:3
+            }
+        }, {
+            breakpoint: 520,
+            setting: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+
+
+
+$(document).ready(function(){
+    $('.customer-logos-testi').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        grabCursor:true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: false,
+        pauseOnHover:false,
+        
+    });
+});
+//END PARTNERS
