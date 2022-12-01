@@ -16,7 +16,7 @@ body{
     /* box-sizing: border-box; */
 }
 
-.container{
+.container-1{
     /* background: white; */
     /* border: 10px solid orangered; */
     border-radius: 10px;
@@ -24,12 +24,12 @@ body{
     width: 90%;
 }
 
-img{
+/* img{
     position: fixed;
     height: 50vh;
     width: 90%;
     z-index: -1;
-}
+} */
 
 
 .head{
