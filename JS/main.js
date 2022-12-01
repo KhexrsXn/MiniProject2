@@ -4,6 +4,8 @@ const heroSec = document.querySelector('.heroSec');
 const gameSec = document.querySelector('.gameSec');
 const testiSec = document.querySelector('.testiSec');
 const partSec = document.querySelector('.partSec');
+const categsec = document.querySelector('.categsec');
+
 
 function accountPop(){
     acnt.classList.add("open-acnt");
@@ -11,6 +13,7 @@ function accountPop(){
     gameSec.classList.add("close-acnt");
     testiSec.classList.add("close-acnt");
     partSec.classList.add('close-acnt');
+    categsec.classList.add("close-acnt");
    
 }
 function Accointclose(){
@@ -104,15 +107,26 @@ window.addEventListener("scroll", ()=>{
         toTop2.classList.remove("active");
     }
 });
-// const toTop3 = document.querySelector(".chat-bot-3");
+const toTop4 = document.querySelector("#chat-bot-sup");
 
-// window.addEventListener("scroll", ()=>{
-//     if (window.pageYOffset > 300){
-//         toTop3.classList.add("active");
-//     } else {
-//         toTop3.classList.remove("active");
-//     }
-// });
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 300){
+        toTop4.classList.add("active");
+    } else {
+        toTop4.classList.remove("active");
+    }
+});
+
+const toTop3 = document.querySelector("#chat-bot-2-sup");
+
+window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 400){
+        toTop3.classList.add("active");
+    } else {
+        toTop3.classList.remove("active");
+    }
+});
+
 //END CHAT BOT
 
 
