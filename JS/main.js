@@ -4,6 +4,8 @@ const heroSec = document.querySelector('.heroSec');
 const gameSec = document.querySelector('.gameSec');
 const testiSec = document.querySelector('.testiSec');
 const partSec = document.querySelector('.partSec');
+const categsec = document.querySelector('.categsec');
+
 
 function accountPop(){
     acnt.classList.add("open-acnt");
@@ -11,6 +13,7 @@ function accountPop(){
     gameSec.classList.add("close-acnt");
     testiSec.classList.add("close-acnt");
     partSec.classList.add('close-acnt');
+    categsec.classList.add("close-acnt");
    
 }
 function Accointclose(){
