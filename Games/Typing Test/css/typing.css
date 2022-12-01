@@ -4,11 +4,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: papayawhip;
-    /* background-image: url(./img/fruit.png); */
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
 }
 *{
     margin: 0;
@@ -16,28 +11,37 @@ body{
     /* box-sizing: border-box; */
 }
 
-.container-1{
-    /* background: white; */
-    /* border: 10px solid orangered; */
-    border-radius: 10px;
-    height: 50vh;
-    width: 90%;
+.game-typing-bg{
+    background: #FFD700;
+    padding: 50px;
+    height: 20%;
 }
 
-/* img{
-    position: fixed;
-    height: 50vh;
-    width: 90%;
-    z-index: -1;
-} */
+.game-typing-container{
+    width: 60%;
+    height: 30%;
+    background: papayawhip;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    border: 10px solid black;
+}
 
+.container{
+    border-radius: 10px;
+    padding: 0 0 20px 0;
+}
 
 .head{
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
     /* border: 0.5px solid black; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.timer > p, .score > p{
+    margin-bottom: 0;
 }
 
 .score{
