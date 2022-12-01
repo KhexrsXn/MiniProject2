@@ -1,29 +1,3 @@
-// for Account popup
-const acnt = document.querySelector('.Account');
-const heroSec = document.querySelector('.heroSec');
-const gameSec = document.querySelector('.gameSec');
-const testiSec = document.querySelector('.testiSec');
-const partSec = document.querySelector('.partSec');
-const categsec = document.querySelector('.categsec');
-
-
-function accountPop(){
-    acnt.classList.add("open-acnt");
-    heroSec.classList.add("close-acnt");
-    gameSec.classList.add("close-acnt");
-    testiSec.classList.add("close-acnt");
-    partSec.classList.add('close-acnt');
-    categsec.classList.add("close-acnt");
-   
-}
-function Accointclose(){
-    acnt.classList.remove("open-acnt");
-    heroSec.classList.remove("close-acnt");
-    gameSec.classList.remove("close-acnt");
-    testiSec.classList.remove("close-acnt");
-    partSec.classList.remove('close-acnt');
-}
-
 
 const forms = document.querySelector(".forms"),
 passShowHide = document.querySelectorAll(".eye-icon"),
