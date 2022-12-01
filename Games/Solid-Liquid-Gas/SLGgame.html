@@ -10,56 +10,60 @@
     <div id="game"></div>
 
     <script>
-    // var 
-        const questionDisplay = document.createElement('h1');
-        const resultDisplay = document.createElement('h4');
-   
-    // grid frame     
-        const gameGrid = document.getElementById('game')
-        gameGrid.append(questionDisplay, resultDisplay);
-    // choices
-        const choices = ['Solid', 'Liquid', 'Gas'];
-        let userAns;
-    // question
-
-        const questions = [{
-            solid: ['Rock', 'Ball', 'Table'], 
-            liquid: ['Water', 'Coffee', 'Ocean'], 
-            gas: ['Air', 'Smoke', 'Mist']
-        }];
-
+        // var 
+            const questionDisplay = document.createElement('h1');
+            const resultDisplay = document.createElement('h4');
+       
+        // grid frame     
+            const gameGrid = document.getElementById('game')
+            gameGrid.append(questionDisplay, resultDisplay);
+        // choices
+            const choices = ['Solid', 'Liquid', 'Gas'];
+            let userAns;
+        // question
+    
+            const solid = ['Rock', 'Concrete', 'Wood'];
+            const liquid = ['Water', 'Juice', 'Milk'];
+            const gas = ['Smoke', 'Mist', 'Air'];
+            
+            let randomSolid = solid[Math.floor(Math.random() * solid.length)];;
+            let randomLiquid = liquid[Math.floor(Math.random() * liquid.length)];;
+            let randomGas = gas[Math.floor(Math.random() * gas.length)];;
+    
+    
+            const questions = [randomSolid, randomLiquid, randomGas];
+    
+            const generateQuestion = () =>{
+                const randomChoice = questions[Math.floor(Math.random() * questions.length)];
+                questionDisplay.innerHTML = 'Which state of Matter is: ' + randomChoice;
+            };
+    
+        // button 
         
-
-        const generateQuestion = () =>{
-            const randomChoice = questions[Math.floor(Math.random() * questions.length)];
-            questionDisplay.innerHTML = 'Which state of Matter is this: ' + randomChoice;
-        }
-    // button 
+            const theClick = (e) => {
+                userAns = e.target.id;
+                console.log(userAns)
+                console.log(randomChoice)
+                generateQuestion();
+                // getResult();
+            };
+            for (let i = 0; i < choices.length; i++) {
+                const button = document.createElement('button');
+                button.id = choices[i];
+                button.innerHTML = choices[i];
+                button.addEventListener('click', theClick);
+                gameGrid.appendChild(button);
+            };
+        
+        //Result and condition
+            // const getResult = () => {
+            //     if ( )
+            // } 
     
-        const theClick = (e) => {
-            userAns = e.target.id;
-            console.log(userAns)
-            generateQuestion();
-            // getResult();
-        };
-        for (let i = 0; i < choices.length; i++) {
-            const button = document.createElement('button');
-            button.id = choices[i];
-            button.innerHTML = choices[i];
-            button.addEventListener('click', theClick);
-            gameGrid.appendChild(button);
-        };
     
-    // //Result and condition
-    //     const getResult = () => {
-    //         switch (userAns + randomChoice){
-    //         }
-    //     }
-
-
+        
     
-
-
-    </script>
+    
+        </script>
 </body>
 </html>
