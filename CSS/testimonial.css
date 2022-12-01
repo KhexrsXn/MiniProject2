@@ -18,7 +18,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 30px 0;
-    background: white;
+    background: red;
 }
 
 .slide-container{
@@ -44,7 +44,7 @@ body{
   padding: 10px 14px;
 }
 .card-content{
-  height: 350px;
+    height: 250px;
 }
 .image-content{
   position: relative;

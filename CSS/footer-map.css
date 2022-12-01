@@ -34,6 +34,7 @@
 .popupContainer{
     display: flex;
     justify-content: center;
+    z-index: 99;
     /* align-items: center; */
 }
 
