@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Poppins;
+  background-color: #7FB5FF;
+  position: relative;
+
+}
+
+.title-label{
+  margin:10px ;
+
+}
+.title-label h1{
+  text-align: center;
+  font-weight: bold;
+  color: #1c1c1c;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.title-label h1::after{
+  content: '';
+  background: #1c1c1c;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+div .equation {
+  background-color: rgb(174, 11, 11);
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 1px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.equation h1{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width:360px) and (max-width: 667px ){
+  .equation h1{
+    font-size: 70px;
+  }
+}
+
+.row{
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.row div{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.option1{
+  background-color: #00005C;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #f9f6f4;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.option1:hover{
+  background-color: #027bfc;
+  color: #020202;
+}
+
+.option2{
+  background-color: #00005C;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #ffffff;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.option2:hover{
+  background-color: #027bfc;
+  color: #000000;
+}
+
+.option3{
+  background-color: #00005C;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #ffffff;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.option3:hover{
+  background-color: #027bfc;
+  color: #020202;
+}
+
+
+
+.icons2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  
+}
+
+.icons2 a i{
+  margin: 10px;
+  color: white;
+}
+
+
+.icons2 i:hover{
+  transition: 0.5s;
+  
+}
+
+@media (max-width:800px){
+  .icons2 i{
+    visibility: hidden;
+  }
+}
+
