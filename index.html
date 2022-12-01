@@ -279,7 +279,7 @@
                     <p class="text-title">Mini Quiz</p>
                     <p class="text-body">A general knowledge quiz tests quiz-takers knowledge on a particular topic.</p>
                 </div>
-                <a href="./Games/Quiz App/index.html">
+                <a href="./Games/Mini Quiz App/mini-quiz.html">
                     <button class="card-button">Play Now</button>
                 </a>
             </div>
@@ -338,7 +338,7 @@
                     <p class="text-title">Fruit Memory Game</p>
                     <p class="text-body">The purpose of this memory game is to make pairs of cards by turning them over 2 by 2.</p>
                 </div>
-                <a href="./Games/Memory game/memorygame.html">
+                <a href="http://127.0.0.1:5500/Games/Math%20game%202/math2.html">
                     <button class="card-button">Play Now</button>
                 </a>
             </div>
@@ -545,7 +545,7 @@
 
 
     <!--PARTNERS -->
-    <div class="container-fluid background partners partSec">
+    <div class="container-fluid background">
         <div class="title">
             <h2 class="typo-space-partner">PARTNERS</h2>
         </div>
@@ -637,7 +637,7 @@
 
     <!-- END FOOTER -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -647,30 +647,31 @@
     <script src="./JS/swiper-bundle.min.js"></script>
     <script src="./JS/testimonial.js"></script>
 
-<script>
-    // for Account popup
-const acnt = document.querySelector('.Account');
-const heroSec = document.querySelector('.heroSec');
-const gameSec = document.querySelector('.gameSec');
-const testiSec = document.querySelector('.testiSec');
-const partSec = document.querySelector('.partSec');
+    <script>
+        // for Account popup
+        const acnt = document.querySelector('.Account');
+        const heroSec = document.querySelector('.heroSec');
+        const gameSec = document.querySelector('.gameSec');
+        const testi = document.querySelector('.slide-container.swiper');
+        const partSec = document.querySelector('.container-fluid.background');
 
-function accountPop(){
-    acnt.classList.add("open-acnt");
-    heroSec.classList.add("close-acnt");
-    gameSec.classList.add("close-acnt");
-    testiSec.classList.add("close-acnt");
-    partSec.classList.add('close-acnt');
-   
-}
-function Accointclose(){
-    acnt.classList.remove("open-acnt");
-    heroSec.classList.remove("close-acnt");
-    gameSec.classList.remove("close-acnt");
-    testiSec.classList.remove("close-acnt");
-    partSec.classList.remove('close-acnt');
-}
-</script>
+        function accountPop() {
+            acnt.classList.add("open-acnt");
+            heroSec.classList.add("close-acnt");
+            gameSec.classList.add("close-acnt");
+            testi.classList.add("hide");
+            partSec.classList.add("hide");
+
+        }
+
+        function Accointclose() {
+            acnt.classList.remove("open-acnt");
+            heroSec.classList.remove("close-acnt");
+            gameSec.classList.remove("close-acnt");
+            testi.classList.remove("close-acnt");
+            partSec.classList.remove('close-acnt');
+        }
+    </script>
 </body>
 
 </html>
