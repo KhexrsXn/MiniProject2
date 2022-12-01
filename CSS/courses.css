@@ -30,7 +30,7 @@ body {
     padding: 1.5rem;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
-    margin: 30px auto 40px;
+    margin: 20px auto 40px;
     overflow: visible;
 }
 
@@ -81,8 +81,11 @@ body {
 /*Text*/
 
 .text-title {
-    font-size: 1.5em;
+    font-size: 1.1rem;
     font-weight: bold;
+    color: #1e1e1e;
+    letter-spacing: 4px;
+    padding-top: .5rem;
 }
 
 
@@ -102,7 +105,7 @@ body {
 /* title */
 
 .title {
-    margin: 1.5rem 3rem 1rem;
+    margin: 1.5rem 2rem 1rem;
     display: flex;
     justify-content: flex-start;
     letter-spacing: 4px;
@@ -114,6 +117,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
+    padding-top: 3.5rem;
+    color: #1e1e1e;
 }
 
 .typo-space-typing::after {
@@ -175,5 +180,20 @@ body {
 @media only screen and (max-width: 500px) {
     .title {
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 369px) {
+    .title h2 {
+        font-size: 1.1rem;
+    }
+    .typo-space-typing::after {
+        width: 195px;
+    }
+    .typo-space-english::after {
+        width: 190px;
+    }
+    .typo-space-science::after {
+        width: 190px;
     }
 }
