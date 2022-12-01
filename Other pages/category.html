@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Category | DevKids Academy</title>
-    <link rel="shortcut icon" href="../Picture/images/logoDevKids.png" type="image/x-icon">
+
+      <!-- logo -->
+  <link rel="shortcut icon" href="../Picture/images/partners/logoDevkids.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/category.css">
     <link rel="stylesheet" href="../CSS/partners.css">
@@ -32,7 +35,7 @@
     <input type="checkbox" id="toggle">
     
     <div class="container-fluid" id="nav">
-        <a id="web-logo" href="/index.html"><img src="../Picture/logoDevkids.png" alt=""></a>
+        <a id="web-logo" href="../index.html"><img src="../Picture/logoDevkids.png" alt=""></a>
 
         <label class="navbar-toggler" for="toggle">
             <span class="bar"></span>
@@ -42,10 +45,10 @@
 
         <ul class="nav-list" >
             <li class="nav-item">
-                <a href="/Other pages/category.html">Category</a>
+                <a href="../Other pages/category.html">Category</a>
             </li>
             <li class="nav-item">
-                <a href="/Other pages/about.html">Support</a>
+                <a href="../Other pages/about.html">Support</a>
             </li>
 
             <li class="nav-item">
@@ -69,6 +72,83 @@
         </ul>
     </div>
     <!-- navbar end  -->
+
+<!-- account  -->
+<section class="Account forms" id="Account">
+    <!-- LogIn -->
+            <div class="form login">
+                <h1 onclick="Accointclose()" class="exit">X</h1>
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="index.html" method="post" name="form" onsubmit="return validated()">
+                        <div class="field input-field">
+                            <i class='bx bx-envelope'></i>
+                            <input autocomplete="off" type="email" name="email" placeholder="Email" class="input">
+                            <div id="email_error">Please fill up your Email or Phone</div>
+                        </div>
+                        <div class="field input-field">
+                            <i class='bx bxs-lock'></i>
+                            <input type="password" placeholder="Password" name="password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                            <div id="pass_error">Please fill up your Password</div>
+                        </div>
+                        <div class="form-link radio">
+                            <div ><input type="radio"> Remember me</div>
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">  Signup</a></span>
+                    </div>
+                </div>
+    
+                <div class="line"></div>
+                <div class="social-acnt">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+                </div>
+            </div>
+    
+    <!-- Signup Form -->
+            <div class="form signup">
+                <h1 onclick="Accointclose()" class="exit">X</h1>
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+                        <div class="field input-field">
+                            <i class='bx bxs-lock'></i>
+                            <input type="password" placeholder="Create password" class="password">
+                        </div>
+                        <div class="field input-field">
+                            <i class='bx bxs-lock'></i>
+                            <input type="password" placeholder="Confirm password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="social-acnt">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+                </div>
+            </div>
+        </section>
+    <!-- END LOGIN -->
 
     <div class="category-bg">
         <div class="button-container">
@@ -95,6 +175,16 @@
         </section>
     </div>
 
+
+<!-- Chatbot -->
+<div>
+    <a href="#"><i id="chat-bot-sup" class="chat-bot fa-solid fa-message"></i></a>
+  </div>
+  <div>
+    <a href="#"><i id="chat-bot-2-sup" class="chat-bot fa-solid fa-arrow-up"></i></a>
+  </div>
+  <!-- Chatbot END -->
+
     <!-- Footer -->
     <footer>
         <div class="foot-start">
@@ -118,7 +208,7 @@
                     </div>
                 </div>
                 <div class="foot-dtl-p">
-                    <p><a href="">About us</a></p>
+                    <p><a href="../Other pages/about.html">About us</a></p>
                     <p><a href="">FAQs</a></p>
                     <p><a href="">Careers</a></p>
                     <p><a href="">Terms & Condition</a></p>
@@ -183,9 +273,9 @@
             }]
         });
     });
-
     </script>
 
+    <script src="../JS/main.js"></script>
     <script src="../JS/footer-map.js"></script>
 
 </body>
