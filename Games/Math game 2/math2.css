@@ -1,333 +1,121 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  body {
-    background-color: #f4c531;
-  } */
-
-  /* .game-container{
-    width: 100%;
-    padding: 50px;
-    background-color: #cfcc88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  .container {
-    background-color: #ffffff;
-    width: 90%;
-    max-width: 31.25em;
-    top: 50%;
-    left: 50%;
-    padding: 5em 3em;
-    border-radius: 0.5em;
-    position: static;
-  }
-  .controls-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container h3 {
-    font-size: 1.2em;
-    color: #23234c;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1.8em;
-  }
-  
-  .container #submit-btn {
-    font-size: 1.2em;
-    font-weight: 500;
-    display: block;
-    margin: 0 auto;
-    background-color: #f4c531;
-    border-radius: 0.3em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #23234c;
-    padding: 0.6em 2em;
-  }
-  #error-msg {
-    text-align: center;
-    margin-top: 1em;
-    background-color: #ffdde0;
-    color: #d62f2f;
-    padding: ;
-  }
-  .container #question {
-    background-color: #eeedf1;
-    font-size: 2em;
-    font-weight: 600;
-    color: #23234c;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.4em 0 1em 0;
-    padding: 1em 0;
-  }
-  .container input {
-    font-size: 1em;
-    font-weight: 600;
-    width: 2.35em;
-    color: #23234c;
-    text-align: center;
-    padding: 0 0.2em;
-    border: none;
-    background-color: transparent;
-    border-bottom: 0.12em solid #23234c;
-    margin: 0 0.25em;
-  }
-  .container input:focus {
-    border-color: #ffd700;
-    outline: none;
-  }
-  /*Hide Number Arrows*/
-  .container input[type="number"] {
-    -moz-appearance: textfield;
-  }
-  .container input[type="number"]::-webkit-outer-spin-button,
-  .container input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  #start-btn {
-    font-size: 1.2em;
-    font-weight: 500;
-    background-color: #ffffff;
-    color: #23234c;
-    border: none;
-    outline:auto;
-    cursor: pointer;
-    padding: 0.8em 1.8em;
-    border-radius: 0.3em;
-  }
-  #result {
-    padding: 1em;
-    font-size: 1.5em;
-    color: #1e1d1d;
-  }
-  #result span {
-    font-weight: 600;
-  }
-  
-  .hide {
-    display: none;
-  }
-
-
-  /* NAV BAR  */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-* {
+  padding: 0;
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-/* #web-logo:hover{
-  cursor: pointer;
-} */
-/* #nav {
-  display: flex;
-  justify-content: space-between ;
-  padding: 1rem;
-  height: 6rem;
-  align-items: center;
-  background-color: #00005C;
-  line-height: 6rem;
-  position: sticky;
-  top:0;
-  z-index: 50;
+body {
+  background-color: #f4c531;
 }
-#nav .navlogo {
-  color: aliceblue;
-  font-size: 28px;
-  font-weight: 500;
-  text-decoration: none;
-}
-#nav .nav-list {
-  display: flex;
-  padding: 0;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-#nav .nav-list .nav-item {
-  cursor: pointer;
+.game2Math{
   height: 100%;
-  padding: 0 30px;
-  transition: .7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem;
 }
-#nav .nav-list a {
-  color: aliceblue;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  position: relative;
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  top: 0;
 }
-#nav .nav-list label {
-  color: aliceblue;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  position: relative;
-  cursor: pointer;
+.container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 31.25em;
+  padding: 5em 3em;
+  border-radius: 0.5em;
 }
-#nav .nav-list a:hover{
-  color: #FFD700;
-}
-#nav .nav-list label:hover{
-  color: #FFD700;
-}
-#searchbar {
-  width: 30rem;
-  height: 2.5rem;
+.container h3 {
+  font-size: 1.2em;
+  color: #23234c;
   text-align: center;
-  position: relative;
-  background-color: #f3f3f3;
-
+  font-weight: 500;
+  line-height: 1.8em;
 }
-.fa-search{
-  position: absolute;
-  z-index: 3;
-  color: rgb(76, 76, 76);
-  margin-top: 25px;
-  padding: 12px;
-
-  font-size: x-large;
-}
-.nav-list a::after {
-  content: '';
+.container #submit-btn {
+  font-size: 1.2em;
+  font-weight: 500;
   display: block;
-  height: 3px;
-  background: #FFD700;
-  position: absolute;
-  top: 1.7em;
-  left: 0;
-  right: 0;
-  transform: scale(0, 1);
-  transform-origin: left;
-  transition: ease-in-out .3s;
-}
-.nav-list a:hover::after {
-  transform: scale(1,1);
-}
-#icons::after {
-  content: '';
-  display: block;
-  height: 3px;
-  background: #FFD700;
-  position: absolute;
-  top: 3em;
-  left: 0;
-  right: 0;
-  transform: scale(0, 1);
-  transform-origin: left;
-  transition: ease-in-out .3s;
-}
-#icons:hover::after {
-  transform: scale(1,1);
-}
-
-
-
-
-@media  (max-width: 1200px) {
-  #nav {
-    padding: 0 2rem;
-  }
-  #nav .nav-list .nav-item {
-    padding: 0 5px;
-  }
-  #searchbar {
-    width: 20rem;
-  }
-}
-@media  (max-width: 900px) {
-  #searchbar {
-    width: 15rem;
-  }
-}
-
-@media  (max-width: 777px) {
-  #nav .nav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    background-color: #00005C;
-    width: 100%;
-    height: 80%;
-    top: 75px;
-    left: 0;
-    transform: translateY(-150%);
-    z-index: 2;
-    transition: .3s;
-    opacity: .9;
-  }
-  #nav .nav-list .nav-item {
-    padding: 0 5px;
-    margin: -10px 0;
-  }
-  #nav {
-    z-index: 999;
-    position: static;
-  }
-  #nav .navbar-toggler {
-    display: grid !important;
-  }
-  #searchbar {
-  display: none;
-  }
-  .fa-search {
-    position: relative;
-    color: white;
-  }
-}
-
-#nav .navbar-toggler {
-  display: none;
-  height: min-content;
-  margin: 20px -10px 0 0;
+  margin: 0 auto;
+  background-color: #f4c531;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
   cursor: pointer;
-  padding: 10px;
+  color: #23234c;
+  padding: 0.6em 2em;
 }
-#nav .navbar-toggler .bar{
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px ;
-  background-color: rgb(5, 79, 144);
-  border-radius: 10%;
-  transition: .6s;
+#error-msg {
+  text-align: center;
+  margin-top: 1em;
+  background-color: #ffdde0;
+  color: #d62f2f;
 }
-#toggle {
+.container #question {
+  background-color: #eeedf1;
+  font-size: 2em;
+  font-weight: 600;
+  color: #23234c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.4em 0 1em 0;
+  padding: 1em 0;
+}
+.container input {
+  font-size: 1em;
+  font-weight: 600;
+  width: 2.35em;
+  color: #23234c;
+  text-align: center;
+  padding: 0 0.2em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.12em solid #23234c;
+  margin: 0 0.25em;
+}
+.container input:focus {
+  border-color: #f4c531;
+  outline: none;
+}
+/*Hide Number Arrows*/
+.container input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#start-btn {
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #23234c;
+  border: none;
+  outline:auto;
+  cursor: pointer;
+  padding: 0.8em 1.8em;
+  border-radius: 0.3em;
+}
+#result {
+  padding: 1rem;
+  font-size: 1.5em;
+  color: #23234c;
+}
+#result span {
+  font-weight: 600;
+}
+
+.hide {
   display: none;
 }
-#toggle:checked ~ #nav .nav-list {
-  transform: translateY(0);
-}
-#toggle:checked ~ #nav .navbar-toggler {
-  margin-top: 35px;
-}
-#toggle:checked ~ #nav .navbar-toggler .bar:nth-child(1) {
-  position: absolute;
-  transform: rotate(45deg);
-}
-#toggle:checked ~ #nav .navbar-toggler .bar:nth-child(2) {
-  display: none;
-}
-#toggle:checked ~ #nav .navbar-toggler .bar:nth-child(3) {
-  transform: rotate(-45deg);
-} */
-/* END NAVBAR */
