@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      <!-- logo -->
+    <!-- logo -->
     <link rel="shortcut icon" href="../Picture/images/partners/logoDevkids.png" type="image/x-icon">
 
     <title>Category | DevKids Academy</title>
@@ -19,14 +20,11 @@
     <link rel="stylesheet" href="../CSS/footer-map.css">
     <link rel="stylesheet" href="../CSS/courses.css">
     <link rel="stylesheet" href="../CSS/chatBot.css">
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -37,15 +35,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <style>
-        .social-acnt >a:hover{
+        .social-acnt>a:hover {
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <!-- navbar -->
     <input type="checkbox" id="toggle">
-    
+
     <div class="container-fluid" id="nav">
         <a id="web-logo" href="../index.html"><img src="../Picture/logoDevkids.png" alt=""></a>
 
@@ -55,7 +54,7 @@
             <span class="bar"></span>
         </label>
 
-        <ul class="nav-list" >
+        <ul class="nav-list">
             <li class="nav-item">
                 <a href="../Other pages/category.html">Category</a>
             </li>
@@ -69,7 +68,7 @@
             </li>
 
 
-            <li class="nav-item">   
+            <li class="nav-item">
                 <label href="#" for="toggle" id="icons"><i class="fa-sharp fa-solid fa-bell"></i></label>
             </li>
             <li class="nav-item">
@@ -77,89 +76,89 @@
             </li>
             <li class="nav-item">
                 <label href="#" for="toggle" id="icons"><i class="fa-solid fa-cart-plus"></i></label>
-            </li >
+            </li>
             <li class="nav-item" for="toggle">
-                <label href="#" for="toggle" id="icons"onclick="accountPop()"><i class="fas fa-user"></i></label>
+                <label href="#" for="toggle" id="icons" onclick="accountPop()"><i class="fas fa-user"></i></label>
             </li>
         </ul>
     </div>
     <!-- navbar end  -->
 
-<!-- account  -->
-<section class="Account forms" id="Account">
-    <!-- LogIn -->
-            <div class="form login">
-                <h1 onclick="Accointclose()" class="exit">X</h1>
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="index.html" method="post" name="form" onsubmit="return validated()">
-                        <div class="field input-field">
-                            <i class='bx bx-envelope'></i>
-                            <input autocomplete="off" type="email" name="email" placeholder="Email" class="input">
-                            <div id="email_error">Please fill up your Email or Phone</div>
-                        </div>
-                        <div class="field input-field">
-                            <i class='bx bxs-lock'></i>
-                            <input type="password" placeholder="Password" name="password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                            <div id="pass_error">Please fill up your Password</div>
-                        </div>
-                        <div class="form-link radio">
-                            <div ><input type="radio"> Remember me</div>
-                            <a href="#" class="forgot-pass">Forgot password?</a>
-                        </div>
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">  Signup</a></span>
+    <!-- account  -->
+    <section class="Account forms" id="Account">
+        <!-- LogIn -->
+        <div class="form login">
+            <h1 onclick="Accointclose()" class="exit">X</h1>
+            <div class="form-content">
+                <header>Login</header>
+                <form action="index.html" method="post" name="form" onsubmit="return validated()">
+                    <div class="field input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input autocomplete="off" type="email" name="email" placeholder="Email" class="input">
+                        <div id="email_error">Please fill up your Email or Phone</div>
                     </div>
-                </div>
-    
-                <div class="line"></div>
-                <div class="social-acnt">
-                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
-                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+                    <div class="field input-field">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" placeholder="Password" name="password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                        <div id="pass_error">Please fill up your Password</div>
+                    </div>
+                    <div class="form-link radio">
+                        <div><input type="radio"> Remember me</div>
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">  Signup</a></span>
                 </div>
             </div>
-    
-    <!-- Signup Form -->
-            <div class="form signup">
-                <h1 onclick="Accointclose()" class="exit">X</h1>
-                <div class="form-content">
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <i class='bx bx-envelope'></i>
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-                        <div class="field input-field">
-                            <i class='bx bxs-lock'></i>
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-                        <div class="field input-field">
-                            <i class='bx bxs-lock'></i>
-                            <input type="password" placeholder="Confirm password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-                        <div class="field button-field">
-                            <button>Signup</button>
-                        </div>
-                    </form>
-                    <div class="form-link">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+
+            <div class="line"></div>
+            <div class="social-acnt">
+                <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
+                <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup">
+            <h1 onclick="Accointclose()" class="exit">X</h1>
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email" class="input">
                     </div>
-                </div>
-                <div class="line"></div>
-                <div class="social-acnt">
-                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
-                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+                    <div class="field input-field">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" placeholder="Create password" class="password">
+                    </div>
+                    <div class="field input-field">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
                 </div>
             </div>
-        </section>
+            <div class="line"></div>
+            <div class="social-acnt">
+                <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="social"><i class='bx bxl-google-plus'></i></i></i></a>
+                <a href="#" class="social"><i class='bx bxl-linkedin'></i></i></a>
+            </div>
+        </div>
+    </section>
     <!-- END LOGIN -->
 
     <!-- <div class="categSec">
@@ -175,106 +174,106 @@
         </div>
     </div> -->
 
-            <!-- end of typing games -->
+    <!-- end of typing games -->
 
-<!-- english quiz start -->
-         <div class="title">
-            <h2 class="typo-space-english">English Quiz</h2>
-        </div>
-        <div class="container-game">
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/english-quiz-1.webp" height="175" alt="English Quiz">
-                    <p class="text-title">Mini Quiz</p>
-                    <p class="text-body">A general knowledge quiz tests quiz-takers knowledge on a particular topic.</p>
-                </div>
-                <a href="./Games/Mini Quiz App/mini-quiz.html">
-                    <button class="card-button">Play Now</button>
-                </a>
+    <!-- english quiz start -->
+    <div class="title">
+        <h2 class="typo-space-english">English Quiz</h2>
+    </div>
+    <div class="container-game">
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/english-quiz-1.webp" height="175" alt="English Quiz">
+                <p class="text-title">Mini Quiz</p>
+                <p class="text-body">A general knowledge quiz tests quiz-takers knowledge on a particular topic.</p>
             </div>
-
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/english-quiz-3.png" alt="English Quiz" height="175">
-                    <p class="text-title">Gameshow Quiz</p>
-                    <p class="text-body">A multiple choice quiz with time pressure, lifelines and bonus round.</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/english-quiz-4.png" alt="English Quiz" height="175">
-                    <p class="text-title">Detormentis</p>
-                    <p class="text-body">This app is for guessing the animal name.</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/memorygame4.JPEG" alt="English Quiz" height="175">
-                    <p class="text-title">Memory</p>
-                    <p class="text-body">The purpose of this memory game is to make pairs of cards by turning them over 2 by 2..</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
+            <a href="./Games/Mini Quiz App/mini-quiz.html">
+                <button class="card-button">Play Now</button>
+            </a>
         </div>
 
-        <!-- end of english quiz -->
-
-        <!-- science quiz start -->
-        <div class="title">
-            <h2 class="typo-space-science">Science Quiz</h2>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/english-quiz-3.png" alt="English Quiz" height="175">
+                <p class="text-title">Gameshow Quiz</p>
+                <p class="text-body">A multiple choice quiz with time pressure, lifelines and bonus round.</p>
+            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
         </div>
-        <div class="container-game">
-
-
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/Food and safety 3.jpg" alt="Science Quiz" height="175">
-                    <p class="text-title">Food & Safety</p>
-                    <p class="text-body">This app will teach pupils food safety steps with these coloring pages.</p>
-                </div>
-                <a href="/Games/Food-Safety/Food-Safety.html">
-                    <button class="card-button">Play Now</button>
-                </a>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/english-quiz-4.png" alt="English Quiz" height="175">
+                <p class="text-title">Detormentis</p>
+                <p class="text-body">This app is for guessing the animal name.</p>
             </div>
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/science-quiz-2.png" alt="Science Quiz" height="175">
-                    <p class="text-title">General Science</p>
-                    <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/english-quiz-4.png" alt="Science Quiz" height="175">
-                    <p class="text-title">Find the Panda</p>
-                    <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
-            <div class="card-game">
-                <div class="card-details">
-                    <img src="/Picture/games/english-quiz-3.png" alt="Science Quiz" height="175">
-                    <p class="text-title">Quiz Beez</p>
-                    <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
-                </div>
-                <a href="#">
-                    <button class="card-button">Play Now</button>
-                </a>
-            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
         </div>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/memorygame4.JPEG" alt="English Quiz" height="175">
+                <p class="text-title">Memory</p>
+                <p class="text-body">The purpose of this memory game is to make pairs of cards by turning them over 2 by 2..</p>
+            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- end of english quiz -->
+
+    <!-- science quiz start -->
+    <div class="title">
+        <h2 class="typo-space-science">Science Quiz</h2>
+    </div>
+    <div class="container-game">
+
+
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/Food and safety 3.jpg" alt="Science Quiz" height="175">
+                <p class="text-title">Food & Safety</p>
+                <p class="text-body">This app will teach pupils food safety steps with these coloring pages.</p>
+            </div>
+            <a href="/Games/Food-Safety/Food-Safety.html">
+                <button class="card-button">Play Now</button>
+            </a>
+        </div>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/science-quiz-2.png" alt="Science Quiz" height="175">
+                <p class="text-title">General Science</p>
+                <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
+            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
+        </div>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/english-quiz-4.png" alt="Science Quiz" height="175">
+                <p class="text-title">Find the Panda</p>
+                <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
+            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
+        </div>
+        <div class="card-game">
+            <div class="card-details">
+                <img src="/Picture/games/english-quiz-3.png" alt="Science Quiz" height="175">
+                <p class="text-title">Quiz Beez</p>
+                <p class="text-body">Science quiz questions is to raise the bar of learning science to train their minds for learning important things.</p>
+            </div>
+            <a href="#">
+                <button class="card-button">Play Now</button>
+            </a>
+        </div>
+    </div>
     </div>
 
 
@@ -297,31 +296,33 @@
         </section>
     </div>
 
-<!-- Chatbot -->
+    <!-- Chatbot -->
     <div class="chatbutton">
         <a><i id="chat-bot" class="chat-bot fa-solid fa-message"></i></a>
     </div>
     <div class="chatNi">
         <div class="chat-header">
-          <div class="logo">
-            <img src="../Picture/robot-no-bg.png"/>
-          </div>
-          <div class="chat_exit"><h6>X</h6></div>
+            <div class="logo">
+                <img src="../Picture/robot-no-bg.png" />
+            </div>
+            <div class="chat_exit">
+                <h6>X</h6>
+            </div>
         </div>
         <div class="chat-body"></div>
         <div class="chat-input">
-          <div class="input-sec">
-            <input type="text" id="txtInput" placeholder="Type here" autofocus />
-          </div>
-          <div class="send">
-            <i class='bx bxs-send'></i>
-          </div>
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Type here" autofocus />
+            </div>
+            <div class="send">
+                <i class='bx bxs-send'></i>
+            </div>
         </div>
     </div>
     <div>
         <a class="chat-bot-2" href="#"><i id="chat-bot-2-sup" class="chat-bot fa-solid fa-arrow-up"></i></a>
     </div>
-<!-- Chatbot END -->
+    <!-- Chatbot END -->
 
     <!-- Developers -->
     <div class="slide-container swiper">
@@ -443,7 +444,8 @@
                     <div class="popupContainer">
                         <div class="popup" id="popup">
                             <p id="btnClose">X</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.58392494594!2d-118.32733432499835!3d34.15698551219359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc3c0ca54f3%3A0xc78400656aa70e5!2s500%20S%20Buena%20Vista%20St%2C%20Burbank%2C%20CA%2091521%2C%20USA!5e0!3m2!1sen!2sph!4v1669865489452!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.58392494594!2d-118.32733432499835!3d34.15698551219359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc3c0ca54f3%3A0xc78400656aa70e5!2s500%20S%20Buena%20Vista%20St%2C%20Burbank%2C%20CA%2091521%2C%20USA!5e0!3m2!1sen!2sph!4v1669865489452!5m2!1sen!2sph"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <p><a href="">Terms & Condition</a></p>
@@ -482,32 +484,31 @@
             </div>
         </div>
     </footer>
-    
+
 
     <script>
-    
-    $(document).ready(function(){
-        $('.customer-logos').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-            dots: false,
-            pauseOnHover:false,
-            responsive: [{
-                breakpoint: 768,
-                setting: {
-                    slidesToShow:3
-                }
-            }, {
-                breakpoint: 520,
-                setting: {
-                    slidesToShow: 2
-                }
-            }]
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 2
+                    }
+                }]
+            });
         });
-    });
     </script>
 
     <script src="../JS/main.js"></script>
@@ -521,18 +522,19 @@
         const acnt = document.querySelector('.Account');
         const btnSec = document.querySelector('.button-container');
         const aboutSec = document.querySelector('.container-fluid.background');
-        const partners = document.querySelector('.slide-container.swiper'); 
-        const imgSec = document.querySelector('.img-container'); 
+        const partners = document.querySelector('.slide-container.swiper');
+        const imgSec = document.querySelector('.img-container');
 
-    
-        function accountPop(){
+
+        function accountPop() {
             acnt.classList.add("open-acnt");
             aboutSec.classList.add('hide');
             partners.classList.add('hide');
             btnSec.classList.add("hide");
             imgSec.classList.add("hide");
         }
-        function Accointclose(){
+
+        function Accointclose() {
             acnt.classList.remove("open-acnt");
             aboutSec.classList.remove('hide');
             partners.classList.remove('hide');
@@ -541,4 +543,5 @@
         }
     </script>
 </body>
+
 </html>
