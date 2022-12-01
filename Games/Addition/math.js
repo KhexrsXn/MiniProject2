@@ -7,10 +7,10 @@ const audio2 = document.getElementById("audio2");
 var answer = 0;
 
 function generate_eqation(){
-  var num1 = Math.floor(Math.random() * 20)
+  var num1 = Math.floor(Math.random() * 10)
   var num2 = Math.floor(Math.random() * 20)
-  var wrongans1 = Math.floor(Math.random() *30)
-  var wrongans2 = Math.floor(Math.random() *30)
+  var wrongans1 = Math.floor(Math.random() *20)
+  var wrongans2 = Math.floor(Math.random() *20)
 
   var allanswer = [];
   var switchans = [];
@@ -22,19 +22,16 @@ function generate_eqation(){
 
   allanswer = [answer, wrongans1, wrongans2];
 
-  for(i = allanswer.length; i--;){
-    switchans.push(allanswer.splice(Math.floor(Math.random() * (i + 1)), 1) [0]);
+  for(B = allanswer.length; B--;){
+    switchans.push(allanswer.splice(Math.floor(Math.random() * (B + 1)), 1) [0]);
   }
 
   option1.innerHTML = switchans[0];
   option2.innerHTML = switchans[1];
   option3.innerHTML = switchans[2];
 
-  console.log(allanswer.length + "/n" + i)
-
-
 }
-
+generate_eqation();
 option1.addEventListener("click",function(){
   if (option1.innerHTML == answer){
     generate_eqation();
@@ -68,4 +65,3 @@ option3.addEventListener("click",function(){
 
 });
 
-generate_eqation();
