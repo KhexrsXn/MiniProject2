@@ -346,6 +346,9 @@ body{
 .partSec{
   display: block;
 }
+.aboutSec{
+  display: block;
+}
 /* --- login ---- */
 
 .Account{

@@ -35,9 +35,6 @@
         .social-acnt >a:hover{
             text-decoration: none;
         }
-        .categsec{
-            display: block;
-          }
     </style>
 </head>
 <body>
@@ -160,14 +157,16 @@
         </section>
     <!-- END LOGIN -->
 
-    <div class="category-bg categsec">
-        <div class="button-container">
-            <button>Typing Games</button>
-            <button>Math Quiz</button>
-            <button>Science Quiz</button>
-        </div>
-        <div class="img-container">
-            <img class="w-100 h-100" src="../Picture/Back To School-2.png" alt="image" srcset="">
+    <div class="categSec">
+        <div class="category-bg ">
+            <div class="button-container">
+                <button>Typing Games</button>
+                <button>Math Quiz</button>
+                <button>Science Quiz</button>
+            </div>
+            <div class="img-container">
+                <img class="w-100 h-100" src="../Picture/Back To School-2.png" alt="image" srcset="">
+            </div>
         </div>
     </div>
 
@@ -287,6 +286,22 @@
 
     <script src="../JS/main.js"></script>
     <script src="../JS/footer-map.js"></script>
+    <script>
+        const acnt = document.querySelector('.Account');
+        const categSec = document.querySelector('.categSec');
+        const partners = document.querySelector('.container-fluid.background'); 
+
+        function accountPop(){
+            acnt.classList.add("open-acnt");
+            categSec.classList.add('hide');
+            partners.classList.add('hide');
+        }
+        function Accointclose(){
+            acnt.classList.remove("open-acnt");
+            categSec.classList.remove('hide');
+            partners.classList.remove('hide');
+        }
+    </script>
 
 </body>
 </html>

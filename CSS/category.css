@@ -23,7 +23,9 @@ html,body{
     flex-flow: row wrap;
     padding: 20px 0;
 }
-
+.categSec.hide{
+    display: none;
+}
 .button-container > button{
     width: 400px;
     height: 100px;
@@ -47,7 +49,10 @@ html,body{
     background: #FFD700;
     color: #00005C;
 }
-
+.container-fluid.background.hide{
+    display: none;
+    pointer-events: none;
+}
 /* .img-container{
     width: 100%;
     height: auto;
