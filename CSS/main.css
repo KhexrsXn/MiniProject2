@@ -438,14 +438,13 @@ form{
   margin-top: 10px;
 }
 
-input{
+/* input{
   position: relative;
   background:transparent ;
   border: 0;
   outline: none;
   margin-left: 10px;
-
-}
+} */
 .form .field{
   position: relative;
   height: 50px;

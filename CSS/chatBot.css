@@ -1,0 +1,129 @@
+.chatbtn button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    font-size: 2rem;
+    color: #ccc;
+    background: #00005c;
+  
+  }
+  .chatNi {
+    --light-color: #fff;
+    height: 420px;
+    width: 350px;
+    background: var(--light-color);
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    box-shadow: 0px 0px 15px 0px black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 99;
+  }
+  .chat-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    background-color: #00005c;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  .chatNi.fadeIn{
+      opacity: 1;
+      transition: all ease 0.4s;
+      pointer-events: all;
+  }
+  .chatNi.fadeOut{
+      opacity: 0;
+      transition: all .5s;
+  }
+  .chat-header .logo  {
+    height: 50px;
+    width: 50px;
+    border-radius: 60%;
+  }
+  .chat-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .chat-header h6{
+      background-color: #00005c;
+      box-shadow: 0px 0px 5px 0px rgb(242, 239, 239);
+      padding: 0 .5rem;
+      margin-right: -6px;
+      border-radius: 50%;
+  }
+  .chat-header h6:hover{
+      background: #0303b0;
+      cursor: pointer;
+  }
+  .chat-body {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    align-items: flex-end;
+    overflow-y: auto;
+  }
+  .chat-input {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+  .input-sec {
+    flex: 9;
+  }
+  .send i {
+    padding: .7rem;
+    background-color: #00005c; 
+    color: white; 
+    font-size: 1.5rem;
+  }
+  .send i:hover{
+      background: #0303b0;
+      cursor: pointer;
+  }
+  #txtInput {
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .chatbot-message,
+  .user-message {
+    padding: 8px;
+    background: #ccc;
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 3px 10px 10px;
+  }
+  .chatbot-message {
+    background: #0652c0;
+    color: var(--light-color);
+    align-self: flex-start;
+    border-radius: 10px 10px 3px 10px;
+  }
+  .chatbutton.hide{
+    display: none;
+    pointer-events: none;
+  }
+  .chat-bot-2.hide{
+    display: none;
+    pointer-events: none;
+  }
